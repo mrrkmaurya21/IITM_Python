@@ -1,0 +1,11 @@
+##Accept a square matrix as input and store it in a variable named matrix. The first line of input will be, nn, the number of rows in the matrix. 
+Each of the next nn lines will have a sequence of nn space-separated integers
+
+n=int(input())
+matrix=[]
+for i in range(n):
+    row=[]
+    for x in input().split():
+        row.append(int(x))
+    matrix.append(row)    
+print(matrix)
